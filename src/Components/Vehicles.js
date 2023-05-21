@@ -1,31 +1,34 @@
 import React from "react";
 import { Button } from "@mui/material";
 import { Observer } from "mobx-react-lite";
-import { useVehicleStore } from "./VheicleContext";
+import { useVehicleStore } from "./VehicleContext";
 
-export default function Vheicles() {
-  const vheicleStore = useVehicleStore();
+export default function Vehicles() {
+  const vehicleStore = useVehicleStore();
   return (
     <Observer>
       {() => {
         return (
           <div className="incomplete">
-            <h4>Remaining Tasks</h4>
+            <h4>Vehicles</h4>
             <ul>
-              {vheicleStore.vehicleApp.map((el, index) => {
+              {vehicleStore.vehicleApp.map((el) => {
                 if (!el.done) {
                   return (
                     <li key={el.id} className="item">
-                      <p>{el.content}</p>
+                      <p>
+                        {el.name} <span>{el.abr}</span>
+                      </p>
+
                       <Button
                         variant={"outlined"}
                         color={"primary"}
                         onClick={() => {
-                          vheicleStore.complete(el);
+                          vehicleStore.complete(el);
                         }}
                         size={"small"}
                       >
-                        Done
+                        Delete
                       </Button>
                     </li>
                   );

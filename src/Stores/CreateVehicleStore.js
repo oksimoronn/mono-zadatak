@@ -1,14 +1,14 @@
 import React from "react";
 import { nanoid } from "nanoid";
 
-export default function createVheicleStore() {
+export default function CreateVehicleStore() {
   return {
     vehicleApp: [],
-    addVehicle(name) {
+    addVehicle(name, brand) {
       const vehicle = {
         id: nanoid(),
-        content: name,
-        //maker: maker,
+        name: name,
+        abr: brand,
         done: false,
       };
       this.vehicleApp.push(vehicle);

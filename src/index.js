@@ -3,14 +3,14 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { VheicleProvider } from "./Components/VheicleContext";
+import { VehicleProvider } from "./Components/VehicleContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <VheicleProvider>
+    <VehicleProvider>
       <App />
-    </VheicleProvider>
+    </VehicleProvider>
   </React.StrictMode>
 );
 

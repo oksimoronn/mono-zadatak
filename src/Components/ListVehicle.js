@@ -1,8 +1,8 @@
 import React from "react";
 import { Observer, useObserver } from "mobx-react-lite";
-import { useVehicleStore } from "./VheicleContext";
+import { useVehicleStore } from "./VehicleContext";
 
-export default function ListVheicle() {
+export default function ListVehicle() {
   const vehicleStore = useVehicleStore();
   return useObserver(() => {
     return (
@@ -10,7 +10,7 @@ export default function ListVheicle() {
         <h4>List</h4>
         <h5>Remaining</h5>
         <ul style={{ minHeight: "20vh" }}>
-          {vehicleStore.todoList.map((el) => {
+          {vehicleStore.vehicleApp.map((el) => {
             if (!el.done) {
               return (
                 <li key={el.id} className="item remaining">
@@ -24,7 +24,7 @@ export default function ListVheicle() {
         </ul>
         <h5>Done</h5>
         <ul style={{ minHeight: "20vh" }}>
-          {vehicleStore.todoList.map((el) => {
+          {vehicleStore.vehicleApp.map((el) => {
             if (el.done) {
               return (
                 <li key={el.id} className="item done">
