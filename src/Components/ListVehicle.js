@@ -4,7 +4,8 @@ import { useVehicleStore } from "./VehicleContext";
 
 export default function ListVehicle() {
   const vehicleStore = useVehicleStore();
-  return useObserver(() => {
+  return {
+    /*useObserver(() => {
     return (
       <div className="list">
         <h4>List</h4>
@@ -38,5 +39,6 @@ export default function ListVehicle() {
         </ul>
       </div>
     );
-  });
+  });*/
+  };
 }

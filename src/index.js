@@ -7,11 +7,11 @@ import { VehicleProvider } from "./Components/VehicleContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <VehicleProvider>
-      <App />
-    </VehicleProvider>
-  </React.StrictMode>
+  //<React.StrictMode>
+  <VehicleProvider>
+    <App />
+  </VehicleProvider>
+  //</React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

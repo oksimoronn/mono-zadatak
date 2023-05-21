@@ -5,6 +5,7 @@ import { useVehicleStore } from "./VehicleContext";
 
 export default function Vehicles() {
   const vehicleStore = useVehicleStore();
+
   return (
     <Observer>
       {() => {
@@ -17,14 +18,14 @@ export default function Vehicles() {
                   return (
                     <li key={el.id} className="item">
                       <p>
-                        {el.name} <span>{el.abr}</span>
+                        {el.name} <span>{el.abr}</span> ----
+                        <span>{el.id}</span>
                       </p>
-
                       <Button
                         variant={"outlined"}
                         color={"primary"}
                         onClick={() => {
-                          vehicleStore.complete(el);
+                          vehicleStore.delete(el);
                         }}
                         size={"small"}
                       >

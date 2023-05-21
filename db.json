@@ -1,0 +1,28 @@
+{
+  "vehicles": [
+    {
+      "id": 7,
+      "name": "bmw",
+      "abr": "bembara",
+      "done": false
+    },
+    {
+      "id": 2,
+      "name": "lada",
+      "abr": "rus",
+      "done": false
+    },
+    {
+      "id": 3,
+      "name": "bayon",
+      "abr": "hyundai",
+      "done": false
+    },
+    {
+      "id": 4,
+      "name": "sr-7",
+      "abr": "toyota",
+      "done": false
+    }
+  ]
+}
