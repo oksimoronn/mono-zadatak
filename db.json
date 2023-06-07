@@ -1,18 +1,6 @@
 {
   "vehicles": [
     {
-      "id": 7,
-      "name": "bmw",
-      "abr": "bembara",
-      "done": false
-    },
-    {
-      "id": 2,
-      "name": "lada",
-      "abr": "rus",
-      "done": false
-    },
-    {
       "id": 3,
       "name": "bayon",
       "abr": "hyundai",
@@ -20,7 +8,25 @@
     },
     {
       "id": 4,
-      "name": "sr-7",
+      "name": "el radi",
+      "abr": "toyota",
+      "done": false
+    },
+    {
+      "id": 34,
+      "name": "radi",
+      "abr": "rus",
+      "done": false
+    },
+    {
+      "id": 32,
+      "name": "ne radi",
+      "abr": "hyundai",
+      "done": false
+    },
+    {
+      "id": 42,
+      "name": "možda radi",
       "abr": "toyota",
       "done": false
     }

@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 import { useState } from "react";
@@ -6,21 +5,12 @@ import { useVehicleStore } from "./Components/VehicleContext";
 import { Observer } from "mobx-react-lite";
 import { Button, TextField } from "@mui/material";
 import Vheicles from "./Components/Vehicles";
-import axios from "axios";
 
 function App() {
   const vehicleStore = useVehicleStore();
 
   const [value, setValue] = useState("");
   const [val, setVal] = useState("");
-
-  const data = axios
-    .get("http://localhost:8000/vehicles", {
-      responseType: "json",
-    })
-    .then((res) => {
-      res.data.map((el) => vehicleStore.vehicleApp.push(el));
-    });
 
   return (
     <Observer>

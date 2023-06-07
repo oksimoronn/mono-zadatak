@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Button } from "@mui/material";
 import { Observer } from "mobx-react-lite";
 import { useVehicleStore } from "./VehicleContext";
 
 export default function Vehicles() {
   const vehicleStore = useVehicleStore();
+
+  useEffect(() => {
+    vehicleStore.getVehicles();
+  });
+
+  const destroy = (id) => {
+    vehicleStore.delete(id);
+  };
 
   return (
     <Observer>
@@ -13,7 +21,7 @@ export default function Vehicles() {
           <div className="incomplete">
             <h4>Vehicles</h4>
             <ul>
-              {vehicleStore.vehicleApp.map((el) => {
+              {vehicleStore.vehicles.map((el) => {
                 if (!el.done) {
                   return (
                     <li key={el.id} className="item">
@@ -25,7 +33,7 @@ export default function Vehicles() {
                         variant={"outlined"}
                         color={"primary"}
                         onClick={() => {
-                          vehicleStore.delete(el);
+                          destroy(el.id);
                         }}
                         size={"small"}
                       >
