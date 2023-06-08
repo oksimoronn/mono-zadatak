@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Button } from "@mui/material";
 import { Observer } from "mobx-react-lite";
 import { useVehicleStore } from "./VehicleContext";
+import { Link } from "react-router-dom";
 
 export default function Vehicles() {
   const vehicleStore = useVehicleStore();
@@ -22,28 +23,33 @@ export default function Vehicles() {
             <h4>Vehicles</h4>
             <ul>
               {vehicleStore.vehicles.map((el) => {
-                if (!el.done) {
-                  return (
-                    <li key={el.id} className="item">
-                      <p>
-                        {el.name} <span>{el.abr}</span> ----
-                        <span>{el.id}</span>
-                      </p>
-                      <Button
-                        variant={"outlined"}
-                        color={"primary"}
-                        onClick={() => {
-                          destroy(el.id);
-                        }}
-                        size={"small"}
-                      >
-                        Delete
-                      </Button>
-                    </li>
-                  );
-                } else {
-                  return null;
-                }
+                return (
+                  <li key={el.id} className="item">
+                    <p>
+                      {el.name} <span>{el.abr}</span> ----
+                      <span>{el.id}</span>
+                    </p>
+                    <Button
+                      variant={"outlined"}
+                      color={"primary"}
+                      onClick={() => {
+                        destroy(el.id);
+                      }}
+                      size={"small"}
+                    >
+                      Delete
+                    </Button>
+                    <Button
+                      variant={"outlined"}
+                      color={"primary"}
+                      size={"small"}
+                    >
+                      <Link to={`/edit/${el.id}/${el.name}/${el.abr}`}>
+                        Edit
+                      </Link>
+                    </Button>
+                  </li>
+                );
               })}
             </ul>
           </div>

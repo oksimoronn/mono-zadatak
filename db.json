@@ -1,34 +1,29 @@
 {
   "vehicles": [
     {
-      "id": 3,
-      "name": "bayon",
-      "abr": "hyundai",
-      "done": false
-    },
-    {
       "id": 4,
-      "name": "el radi",
-      "abr": "toyota",
-      "done": false
-    },
-    {
-      "id": 34,
-      "name": "radi",
-      "abr": "rus",
-      "done": false
-    },
-    {
-      "id": 32,
-      "name": "ne radi",
-      "abr": "hyundai",
-      "done": false
+      "name": "ne radi evo radi",
+      "abr": "i nije toyota"
     },
     {
       "id": 42,
       "name": "možda radi",
-      "abr": "toyota",
-      "done": false
+      "abr": "toyota"
+    },
+    {
+      "id": "Qn0evYnI7Xz-vU1NQJoAw",
+      "name": "mazda RX-7",
+      "abr": "neki"
+    },
+    {
+      "id": "uE2wLDLr0_sNsYr90REm5",
+      "name": "BMW i8",
+      "abr": "neki"
+    },
+    {
+      "id": "QLZ2e7xhgKvSvqjJ9gd2Y",
+      "name": "proba edita el bi to radilo",
+      "abr": "neki prob"
     }
   ]
 }
