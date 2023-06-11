@@ -33,7 +33,7 @@ export default function CreateVehicleStore() {
 
     async updateVehicle(updateVehicle) {
       try {
-        const response = await axios.put(
+        await axios.put(
           `http://localhost:8000/vehicles/${updateVehicle.id}`,
           updateVehicle
         );

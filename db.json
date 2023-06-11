@@ -2,28 +2,53 @@
   "vehicles": [
     {
       "id": 4,
-      "name": "ne radi evo radi",
-      "abr": "i nije toyota"
+      "name": "Sve radi",
+      "abr": "nema problem"
     },
     {
       "id": 42,
-      "name": "možda radi",
-      "abr": "toyota"
+      "name": "Toyota",
+      "abr": "Rav 4"
     },
     {
       "id": "Qn0evYnI7Xz-vU1NQJoAw",
-      "name": "mazda RX-7",
-      "abr": "neki"
+      "name": "Mazda",
+      "abr": "RX-7"
     },
     {
       "id": "uE2wLDLr0_sNsYr90REm5",
-      "name": "BMW i8",
+      "name": "BMW",
+      "abr": "i8"
+    },
+    {
+      "id": "pjppikhIJOih-K744cAOi",
+      "name": "A sada",
       "abr": "neki"
     },
     {
-      "id": "QLZ2e7xhgKvSvqjJ9gd2Y",
-      "name": "proba edita el bi to radilo",
-      "abr": "neki prob"
+      "id": "CA3iB8X2-8QF8ISax_75M",
+      "name": "BMW",
+      "abr": "ix-9"
+    },
+    {
+      "id": "SzeWT_yDF-LNiCFtK9SFS",
+      "name": "Lada",
+      "abr": "Niva i7"
+    },
+    {
+      "id": "AjY1ySwer0u2WJXp1G4oR",
+      "name": "Hyundai",
+      "abr": "i-30"
+    },
+    {
+      "id": "Fd3jnFHoyXFwvq7VlT3NU",
+      "name": "Hyundai",
+      "abr": "Bayon"
+    },
+    {
+      "id": "33X8mYYgok-_7izke31ZA",
+      "name": "Toyota",
+      "abr": "Hilux 3"
     }
   ]
 }
