@@ -1,16 +1,6 @@
 {
   "vehicles": [
     {
-      "id": 4,
-      "name": "Sve radi",
-      "abr": "nema problem"
-    },
-    {
-      "id": 42,
-      "name": "Toyota",
-      "abr": "Rav 4"
-    },
-    {
       "id": "Qn0evYnI7Xz-vU1NQJoAw",
       "name": "Mazda",
       "abr": "RX-7"
@@ -18,12 +8,7 @@
     {
       "id": "uE2wLDLr0_sNsYr90REm5",
       "name": "BMW",
-      "abr": "i8"
-    },
-    {
-      "id": "pjppikhIJOih-K744cAOi",
-      "name": "A sada",
-      "abr": "neki"
+      "abr": "i9"
     },
     {
       "id": "CA3iB8X2-8QF8ISax_75M",
@@ -41,14 +26,84 @@
       "abr": "i-30"
     },
     {
-      "id": "Fd3jnFHoyXFwvq7VlT3NU",
-      "name": "Hyundai",
-      "abr": "Bayon"
-    },
-    {
       "id": "33X8mYYgok-_7izke31ZA",
       "name": "Toyota",
       "abr": "Hilux 3"
+    },
+    {
+      "id": "WTBE61aNBHieyw1z62HE_",
+      "name": "Lada",
+      "abr": "Samara"
+    },
+    {
+      "id": "kWzwkfolsXx8rXqsWKlqo",
+      "name": "WV",
+      "abr": "Golf 7"
+    },
+    {
+      "id": "iTO5qGxSrVmG1lTSXvLMn",
+      "name": "Mercedes",
+      "abr": "Karavan"
+    },
+    {
+      "id": "eMxo6J3uYHxy2jUpBDg0C",
+      "name": "Citroen",
+      "abr": "C3"
+    },
+    {
+      "id": "rrWdYHfsley3UuUSEgZWh",
+      "name": "ja",
+      "abr": "i ne "
+    },
+    {
+      "id": "EqxB5jcJR-DbhEIV5KwMn",
+      "name": "Lada",
+      "abr": "Niva x9"
+    },
+    {
+      "id": "KUrmJs2m8pUsC306gsMjE",
+      "name": "Hyunda",
+      "abr": "Tuscon"
+    },
+    {
+      "id": "18FmILWlZhNsmRLpQ-d1X",
+      "name": "Hyundai",
+      "abr": "i10"
+    },
+    {
+      "id": "DdQ-1IzLTi6jcVy4QPGFf",
+      "name": "Bmw",
+      "abr": "6"
+    },
+    {
+      "id": "7tgKqIjMECrhWM91eTdJy",
+      "name": "BMW",
+      "abr": "xi7"
+    },
+    {
+      "id": "QrAgqgLimvSioaqGSWMlA",
+      "name": "Audiq7",
+      "abr": "Q7"
+    },
+    {
+      "id": "a7PGMI8f3rsVHjWs_V2fe",
+      "name": "Audi",
+      "abr": "Q1"
+    },
+    {
+      "id": "TgzpgsyPAE9_SZ0Bdk0ev",
+      "name": "Mazda",
+      "abr": "JOJ9"
+    },
+    {
+      "id": "dRD0K4ZwPAOpjmWn3j-dV",
+      "name": "Mazda",
+      "abr": "Nevera"
+    },
+    {
+      "id": "7fDRsBjZ4fvJeCfyF2j2k",
+      "name": "Rimac",
+      "abr": "Nevera"
     }
   ]
 }

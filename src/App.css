@@ -89,3 +89,13 @@
   background-color: azure;
   border: 1px solid rgb(189, 237, 237);
 }
+
+ul li {
+  z-index: 20;
+  padding-left: 0.7rem;
+  display: inline;
+}
+
+.active-page {
+  color: red;
+}
