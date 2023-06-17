@@ -27,11 +27,8 @@ export default function CreateVehicleStore() {
     setItemPP(ipp) {
       this.itemPP = ipp;
     },
-    pageChange(e) {
-      this.setCurrPg(e);
-    },
 
-    async getVehicles() {
+    async getVehicles(numb) {
       try {
         const response = await axios.get("http://localhost:8000/vehicles");
         const vehicles = response.data;
@@ -40,6 +37,7 @@ export default function CreateVehicleStore() {
         let totalPg = Math.ceil(vehicles.length / this.itemPP);
 
         this.setTotalPg(totalPg);
+        this.setItemPP(numb);
 
         const start = this.currPg * this.itemPP;
 

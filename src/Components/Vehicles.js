@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Button } from "@mui/material";
 import { Observer } from "mobx-react-lite";
 import { useVehicleStore } from "./VehicleContext";
@@ -10,9 +10,7 @@ export default function Vehicles() {
 
   let navigate = useNavigate();
 
-  useEffect(() => {
-    vehicleStore.getVehicles();
-  }, [vehicleStore]);
+  const [page, setPage] = useState(5);
 
   const destroy = (id) => {
     vehicleStore.delete(id);
@@ -25,11 +23,40 @@ export default function Vehicles() {
     vehicleStore.getVehiclesPaginate(start, end);
   };
 
+  const itemsPerPage = (e) => {
+    let numb = 5;
+    numb = +e.target.value;
+    setPage(numb);
+    vehicleStore.getVehicles(numb);
+  };
+
+  useEffect(() => {
+    vehicleStore.getVehicles(page);
+  }, [vehicleStore, page]);
+
   return (
     <Observer>
       {() => {
         return (
           <>
+            <div>
+              <form onChange={itemsPerPage} onSelect={pageC}>
+                <label>
+                  Items per page:
+                  <select>
+                    <option name="pp" value="5">
+                      5
+                    </option>
+                    <option name="pp" value="10">
+                      10
+                    </option>
+                    <option name="pp" value="15">
+                      15
+                    </option>
+                  </select>
+                </label>
+              </form>
+            </div>
             <div className="listVehicle">
               {vehicleStore.paginateVehicles.map((el) => {
                 return (
